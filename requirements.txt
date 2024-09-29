@@ -1,0 +1,5 @@
+transformers==4.44.2
+sentence-transformers
+chromadb
+PyPDF2
+Flask
