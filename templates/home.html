@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShieldU - 홈 페이지</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f9ff; /* 밝은 배경 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: translateY(-10px); /* 컨테이너 호버 애니메이션 */
+        }
+        .brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em; /* 텍스트 및 이모지 크기 크게 설정 */
+            font-weight: bold;
+            color: #1e3a8a; /* 텍스트 색상 */
+            margin-bottom: 20px;
+        }
+        .brand .emoji {
+            margin-right: 15px; /* 이모지와 텍스트 간격 */
+        }
+        h2 {
+            font-size: 1.2em;
+            color: #555555;
+            margin-bottom: 40px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+        }
+        .button {
+            padding: 20px 40px;
+            background-color: #0d6efd;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 80px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0047ab;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 방패 이모지와 텍스트를 나란히 크게 배치 -->
+        <div class="brand">
+            <div class="emoji">🛡️</div>
+            <div>ShieldU</div>
+        </div>
+        <h2>보안요원을 위한 종합 AI 관제 플랫폼</h2>
+        <div class="btn-container">
+            <a href="/economy_chatbot" class="button">이코노미 매뉴얼 챗봇</a>
+            <a href="/langchain" class="button">프리미엄 매뉴얼 챗봇</a>
+            <a href="/yolo" class="button">위험 탐지</a>
+        </div>
+    </div>
+</body>
+</html>
